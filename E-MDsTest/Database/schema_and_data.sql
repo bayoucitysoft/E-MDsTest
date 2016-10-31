@@ -46,7 +46,7 @@ begin
 	first_name, 
 	last_name, 
 	gender, 
-	dob 
+	cast(dob as nvarchar(10)) dob 
 	from People with(nolock) 
 end
 go
